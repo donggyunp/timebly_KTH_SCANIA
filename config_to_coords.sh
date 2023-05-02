@@ -1,0 +1,21 @@
+echo "1001~1010 videos into sekeleton coordinates starts" 
+python skeleton_in_progress.py csv_config_files/1001_config.csv videos_and_frames/1001_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1002_config.csv videos_and_frames/1002_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1003_config.csv videos_and_frames/1003_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1004_config.csv videos_and_frames/1004_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1005_config.csv videos_and_frames/1005_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1006_config.csv videos_and_frames/1006_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1007_config.csv videos_and_frames/1007_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1008_config.csv videos_and_frames/1008_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1009_config.csv videos_and_frames/1009_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/1010_config.csv videos_and_frames/1010_10fps.mp4 csv_coords_files
+echo "2001~2009 videos into sekeleton coordinates starts" 
+python skeleton_in_progress.py csv_config_files/2001_config.csv videos_and_frames/2001_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/2002_config.csv videos_and_frames/2002_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/2003_config.csv videos_and_frames/2003_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/2004_config.csv videos_and_frames/2004_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/2005_config.csv videos_and_frames/2005_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/2006_config.csv videos_and_frames/2006_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/2007_config.csv videos_and_frames/2007_10fps.mp4 csv_coords_files
+python skeleton_in_progress.py csv_config_files/2008_config.csv videos_and_frames/2008_10fps.mp4 csv_coords_files 
+python skeleton_in_progress.py csv_config_files/2009_config.csv videos_and_frames/2009_10fps.mp4 csv_coords_files
