@@ -52,3 +52,5 @@ for i in C_grid:
         print('tslearn_sklearnex starts')
         with config_context(target_offload="gpu:0"):
             clf = TimeSeriesSVC(C = i, kernel = 'gak', gamma = j).fit(ts_dataset_X, ts_dataset_y)
+            scores = cross_val_score(clf, ts_dataset_X, ts_dataset_y, cv=5)
+            print(scores, sum(scores)/5)
