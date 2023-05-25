@@ -36,7 +36,7 @@ def tslearn_gpu(feature, label, c, gamma):
 def tslearn_opt(feature, label):
     pass
 
-csv_path = 'csv_coords_files'
+csv_path = 'csv_extend_coords_files'
 csv_files = glob.glob(csv_path + "/*.csv")
 
 ts_dataset_X, ts_dataset_y  = [], []
