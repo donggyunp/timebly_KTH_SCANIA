@@ -1,4 +1,3 @@
-from numba import jit, cuda
 import os
 import csv
 import json
@@ -14,6 +13,7 @@ from tslearn.preprocessing import TimeSeriesScalerMinMax
 from tslearn.utils import to_time_series_dataset
 from tslearn.svm import TimeSeriesSVC
 
+#from numba import jit, cuda
 import dpctl
 from sklearnex import patch_sklearn, config_context
 patch_sklearn()
@@ -21,7 +21,7 @@ patch_sklearn()
 C_grid = [0.8, 0.9, 1.0, 1.1, 1.2,]
 gamma_grid = [0.05, 0.075, 0.1, 0.125, 0.15]
 
-@jit(target_backend='cuda') 
+#@jit(target_backend='cuda') 
 def tslearn_gpu(feature, label, c, gamma):
     print(c, gamma)
     clf = TimeSeriesSVC(C = i, kernel = 'gak', gamma = j)
