@@ -47,8 +47,8 @@ ts_dataset_X = to_time_series_dataset(ts_dataset_X)
 ts_Dataset_X = TimeSeriesScalerMinMax().fit_transform(ts_dataset_X)
 for i in C_grid:
     for j in gamma_grid:
-        print('tslrean_gpu starts')
-        tslearn_gpu(ts_dataset_X, ts_dataset_y, i, j)
+        #print('tslrean_gpu starts')
+        #tslearn_gpu(ts_dataset_X, ts_dataset_y, i, j)
         print('tslearn_sklearnex starts')
         with config_context(target_offload="gpu:0"):
             clf = TimeSeriesSVC(C = i, kernel = 'gak', gamma = j).fit(ts_dataset_X, ts_dataset_y)
